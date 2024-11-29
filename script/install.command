@@ -59,14 +59,14 @@ pre_check() {
     fi
 
     if [[ -n "${CUSTOM_MIRROR}" ]]; then
-        GITHUB_RAW_URL="gitee.com/naibahq/nezha/raw/master"
+        GITHUB_RAW_URL="gitee.com/naibahq/nezha/raw/v0-final"
         GITHUB_URL=$CUSTOM_MIRROR
     else
         if [[ -z "${CN}" ]]; then
-            GITHUB_RAW_URL="raw.githubusercontent.com/naiba/nezha/master"
+            GITHUB_RAW_URL="raw.githubusercontent.com/naiba/nezha/v0-final"
             GITHUB_URL="github.com"
         else
-            GITHUB_RAW_URL="gitee.com/naibahq/nezha/raw/master"
+            GITHUB_RAW_URL="gitee.com/naibahq/nezha/raw/v0-final"
             GITHUB_URL="gitee.com"
         fi
     fi
